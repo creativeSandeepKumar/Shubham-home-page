@@ -5,6 +5,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Components/Layourt/Header';
 import Home from './Components/Layourt/Home/Home';
 import Stockinventory from './Components/Stockinventory/Stockinventory';
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -18,13 +19,8 @@ const App = () => {
           <div className="header-div-fixed">
           <Header/>
           </div>
-          <div className="home-layout">
-            <div className="app-home-section">
-          <Home/>
-            </div>
-          <div className="app-right-sidebar">
-          <Stockinventory/>
-          </div>
+          <div className='outlet-layout'>
+          <Outlet/>
           </div>
         </section>
       </div>
