@@ -10,6 +10,7 @@ import Purchaseorderpage from './pages/Purchase/Purchaseorderpage.jsx';
 import Purchasereturnpage from './pages/Purchase/Purchasereturnpage.jsx';
 import AddPurchase from './pages/AddPurchasepage.jsx';
 import Addpurchaseorderpage from './pages/Addpurchaseorderpage.jsx';
+import Formpage from './pages/Formpage/Formpage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/addpurchasereturn",
         element: <Addpurchaseorderpage/>
+      },
+      {
+        path: "/formpage",
+        element: <Formpage/>
       },
     ]
   }
